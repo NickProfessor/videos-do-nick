@@ -3,7 +3,7 @@ const containerVideos = document.querySelector('.videos__container')
 
 async function buscarEMostrarVideos(){
     try{
-        const busca = await fetch("http://localhost:3000/videos")
+        const busca = await fetch("https://raw.githubusercontent.com/NickProfessor/videos-do-nick/main/backend/videos.json")
         const videos = await busca.json();
 
             videos.forEach((video) => {
