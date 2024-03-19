@@ -1,0 +1,56 @@
+{
+    "videos": [
+      {
+        "id": 1,
+        "titulo": "Aula 01 - Introdução  ao Html",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/yJs33TvTf_k?si=0zrbYn2W5sCLqnSH",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png?raw=true",
+        "categoria": "Programação"
+      },
+      {
+        "id": 2,
+        "titulo": "Aula 02 - Introdução  ao CSS",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/IeuaAGC_0Uw?si=wStSZ9gm8B25AbjM",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png?raw=true",
+        "categoria": "Programação"
+      },{
+        "id": 3,
+        "titulo": "Aula 03 - O que é uma IDE?",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/20P0hHAhAZk?si=5glrG33iyk1sxT1c",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcGN5SwaDt4d_C5Oswx57bLQ7ocCGwHf0G0n87VA00pA&s?raw=true",
+        "categoria": "Programação"
+      },{
+        "id": 4,
+        "titulo": "Aula 04 - Introdução ao JavaScript",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/3xlmG-tY9p0?si=enq0KlRrhSr8Vs4q",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png?raw=true",
+        "categoria": "Programação"
+      },{
+        "id": 5,
+        "titulo": "Aula 05 - Padding e Margin",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/ODWc9m31Vso?si=_lbH-br4ZiYTHI3s",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png?raw=true",
+        "categoria": "Programação"
+      },{
+        "id": 6,
+        "titulo": "Aula 06 - Formularios e Inputs",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/q6gCjOmlnEE?si=Vjiolqpp0QJxfmOr",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png?raw=true",
+        "categoria": "Programação"
+      },{
+        "id": 7,
+        "titulo": "Aula 01 - Introdução ao VisuAlg",
+        "descricao": "3 mil visualizações",
+        "url": "https://www.youtube.com/embed/QEVohAYoMo8?si=JU3uHr_cg681_KuF",
+        "imagem": "https://dashboard.snapcraft.io/site_media/appmedia/2019/12/visualg.png?raw=true",
+        "categoria": "Programação"
+      }
+      
+    ]
+  }
