@@ -7,12 +7,18 @@ async function buscarEMostrarVideos() {
         if (!busca.ok) {
             throw new Error("Erro ao carregar os vídeos: " + busca.status);
         }
-        
-        const videos = await busca.json();
-        if (!Array.isArray(videos)) {
+
+        const data = await busca.json();
+        let videos;
+        // Verifica se a resposta é um objeto com uma chave de vídeos
+        if (data && data.videos && Array.isArray(data.videos)) {
+            videos = data.videos;
+        } else if (Array.isArray(data)) { // Verifica se a resposta é diretamente uma matriz
+            videos = data;
+        } else {
             throw new Error("Os vídeos não estão em um formato válido.");
         }
-        
+
         videos.forEach((video) => {
             if (!video.categoria) {
                 throw new Error("Vídeo sem categoria.");
