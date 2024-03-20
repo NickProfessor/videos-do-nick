@@ -1,0 +1,24 @@
+{
+    "pdfs":[
+        {
+            "id": 1,
+            "titulo":"Exercício 01 - HTML e CSS",
+            "url": "https://drive.google.com/file/d/1wES_VlfIH11CBSzZxaGo5TAbLQmLt8lJ/view?usp=sharing"
+        },
+        {
+            "id": 2,
+            "titulo":"Exercício 02 - HTML e CSS",
+            "url": "https://drive.google.com/file/d/1qupEpi2_J19ajzLZ1Ul8W50M1dYQ5FhB/view?usp=sharing"
+        },
+        {
+            "id": 3,
+            "titulo":"Exercício 03 - HTML e CSS",
+            "url": "https://drive.google.com/file/d/1AHQAay3VukrNN95wBgo1G0lMCybkG1je/view?usp=sharing"
+        },
+        {
+            "id": 4,
+            "titulo":"Exercício 04 - HTML e CSS",
+            "url": "https://drive.google.com/file/d/1VAocit5xnD_HNNY5FiuGLSyPYb_dnpW1/view?usp=sharing"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 const containerVideos = document.querySelector('.videos__container')
-
+const containerPdfs = document.querySelector('.pdfs__container')
 
 async function buscarEMostrarVideos() {
     try {
@@ -29,7 +29,7 @@ async function buscarEMostrarVideos() {
                 <div class="descricao-video">
                     <img class="img-canal" src="${video.imagem}" alt="Logo do canal">
                     <h3 class="titulo-video">${video.titulo}</h3>
-                    <p class="titulo-canal">${video.descricao}</p>
+                    <p class="titulo-canal">Upload ${video.descricao}</p>
                 </div>
             </li>
             `;
@@ -37,8 +37,55 @@ async function buscarEMostrarVideos() {
     } catch(error) {
         containerVideos.innerHTML += `<p style="background-color: red;">Houve um erro ao carregar os vídeos: ${error.message}</p>`;
     } finally {
-        alert("Esta página ainda está na fase de testes! Muitos recursos ainda estão desabilitados...");
+        
     }
 }
 
+async function buscarEMostrarPdfs() {
+    try {
+        const busca = await fetch("http://localhost:3000/pdfs")
+        if (!busca.ok) {
+            throw new Error("Erro ao carregar os pdfs: " + busca.status);
+        }
+
+        const data = await busca.json();
+        let pdfs;
+        // Verifica se a resposta é um objeto com uma chave de vídeos
+        if (data && data.pdfs && Array.isArray(data.pdfs)) {
+            pdfs = data.pdfs;
+        } else if (Array.isArray(data)) { // Verifica se a resposta é diretamente uma matriz
+            pdfs = data;
+        } else {
+            throw new Error("Os pdfs não estão em um formato válido.");
+        }
+
+        pdfs.forEach((pdf) => {
+            if (!pdf.url) {
+                throw new Error("Vídeo sem url.");
+            }
+            containerPdfs.innerHTML += `
+                <a link href="${pdf.url}" target="_blank" class="pdfs__item">    
+                    <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="icone de pdf">   
+                        <h3 class="titulo-pdf">${pdf.titulo}</h3>
+                </a>
+            `;
+        });
+    } catch(error) {
+        containerPdfs.innerHTML += `<p style="background-color: red;">Houve um erro ao carregar os pdfs: ${error.message}</p>`;
+    } finally {
+        
+    }
+}
+
+// function bemVindo(){
+//     let nome
+//     while(nome == "" || nome == undefined){
+//     nome = prompt("Olá aluno! Qual é seu nome?")
+//     }
+//     alert("Seja bem-vindo(a), "+ nome)
+//     alert("Algumas funcionalidades estão desativadas! Bons estudos!")
+// }
+
 buscarEMostrarVideos();
+buscarEMostrarPdfs();
+// bemVindo()
