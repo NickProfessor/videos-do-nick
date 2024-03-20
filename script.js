@@ -43,7 +43,7 @@ async function buscarEMostrarVideos() {
 
 async function buscarEMostrarPdfs() {
     try {
-        const busca = await fetch("http://localhost:3000/pdfs")
+        const busca = await fetch("https://raw.githubusercontent.com/NickProfessor/videos-do-nick/main/backend/pdfs.json")
         if (!busca.ok) {
             throw new Error("Erro ao carregar os pdfs: " + busca.status);
         }
