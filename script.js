@@ -30,6 +30,7 @@ async function buscarEMostrarVideos() {
                     <img class="img-canal" src="${video.imagem}" alt="Logo do canal">
                     <h3 class="titulo-video">${video.titulo}</h3>
                     <p class="titulo-canal">Upload ${video.descricao}</p>
+                    <p class="categoria" hidden>${video.categoria}</p>
                 </div>
             </li>
             `;
@@ -76,6 +77,9 @@ async function buscarEMostrarPdfs() {
         
     }
 }
+
+
+
 
 // function bemVindo(){
 //     let nome
